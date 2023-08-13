@@ -11,3 +11,25 @@
     Output:
         Result: D C B A
 */
+#include <stdio.h>
+
+int main() {
+    char characters[4]; // ประกาศอาเรย์สำหรับเก็บตัวอักขระ 4 ค่า
+
+    // รับค่าตัวอักขระจากผู้ใช้
+    printf("Enter 4 characters: ");
+    for (int i = 0; i < 4; i++) {
+        scanf(" %c", &characters[i]); // ใส่ช่องว่างไว้เพื่อรับอักขระแต่ละตัว
+    }
+
+    // แสดงผลย้อนกลับ
+    printf("Result: ");
+    for (int i = 3; i >= 0; i--) {
+        printf("%c ", characters[i]);
+    }
+
+    return 0;
+}
+
+    
+
